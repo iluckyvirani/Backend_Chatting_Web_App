@@ -1,0 +1,32 @@
+{
+  "name": "fswd-project",
+  "version": "1.0.0",
+  "description": "FSWD Project",
+  "main": "index.js",
+  "scripts": {
+    "frontend-install": "npm install --prefix frontend",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "keywords": [
+    "FSWD",
+    "Project",
+    "POC"
+  ],
+  "author": "Lucky",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "build": "^0.1.4",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.4.4",
+    "socket.io": "^4.7.2"
+  }
+ 
+}
